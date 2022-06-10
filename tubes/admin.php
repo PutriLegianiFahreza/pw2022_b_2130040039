@@ -43,7 +43,7 @@ $legientertaiment = query("SELECT * FROM nct");
   <thead class="table-dark">
     <tr>
       <th scope="col">Id</th>
-       <th scope="col">Gambar</th>
+       <th scope="col">gambar</th>
       <th scope="col">nama_artis</th>
       <th scope="col">nama_lagu</th>
       <th scope="col">album</th>
@@ -58,8 +58,8 @@ $legientertaiment = query("SELECT * FROM nct");
     <tr>
     
       <th><?= $i;?></th>
-      <td><img src="img/<?= $row["Gambar"]; ?>" 
-      width="100"></td>
+      <td><img src="img/<?= $row["gambar"]; ?>" 
+      width="50"></td>
       <td><?= $row["nama_artis"];?></td>
       <td><?= $row["nama_lagu"];?></td>
       <td><?= $row["album"];?></td>

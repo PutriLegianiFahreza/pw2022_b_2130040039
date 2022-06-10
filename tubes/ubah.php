@@ -48,7 +48,7 @@ if(isset($_POST["submit"])) {
     
         <form action="" class="row g-3" method="POST" autocomplete="off" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?= $legientertaiment["id"];?>">
-                <input type="hidden" name="GambarLama" value="<?= $legientertaiment["Gambar"];?>">
+                <input type="hidden" name="gambarLama" value="<?= $legientertaiment["gambar"];?>">
 
             <div class="col-md-6">
                 <label for="nama_artis" class="form-label">nama_artis</label>
@@ -76,7 +76,7 @@ if(isset($_POST["submit"])) {
             <div class="col-md-0">
                 <label for="gambar" class="form-label">gambar</label>
                 <br>
-                <img src="img/<?= $legientertaiment['Gambar'];?>" width="50">
+                <img src="img/<?= $legientertaiment['gambar'];?>" width="50">
                 <br> 
                 <input type="file" class="form-control" id="gambar" name="gambar">
             </div>
