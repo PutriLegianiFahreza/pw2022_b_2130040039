@@ -15,6 +15,18 @@
 
  }
 
+//  function cari
+    function cari ($keyword) {
+        $query = "SELECT * FROM nct
+        WHERE
+        nama_artis LIKE '%$keyword%' OR
+        nama_lagu LIKE '%$keyword%' OR
+        album LIKE '%$keyword%'
+
+        ";
+        return query($query);
+}
+
  // function tambah
  function Tambah($data) {
     global $conn;

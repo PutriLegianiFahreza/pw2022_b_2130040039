@@ -2,11 +2,13 @@
 require 'functions.php';
 $legientertaiment = query("SELECT * FROM nct");
 
-//  tombol cari di tekan
-// if(isset($_POST["cari"]) ) {
-//   $legientertaiment = cari ($_POST["keyword"]);
+// Tombol cari ditekan
+if(isset($_POST["cari"])) {
+  $legientertaiment = cari($_POST["keyword"]);
 
-// }
+ 
+}
+
 ?>
 
 
