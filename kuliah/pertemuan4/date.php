@@ -14,7 +14,7 @@ echo date("l , d-M-Y");
 echo "<hr>";
 
 //time
-// UNIX Timestamp/epoch time
+// UNIX Timestamp/epoch time5
 //detik yang sudah berlalu sejak 1 januari 1970
 
 echo time();
