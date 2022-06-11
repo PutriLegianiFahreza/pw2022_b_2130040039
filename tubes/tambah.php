@@ -9,12 +9,12 @@ if(isset($_POST["submit"])) {
        echo " 
        <script>
             alert('data berhasil ditambakan !');
-            document.location.href = 'admin.php';
+            document.location.href = 'index.php';
        </script>";
    }else {
        echo "<script>
             alert('data gagal ditambakan !');
-            document.location.href = 'admin.php';
+            document.location.href = 'index.php';
        </script>";
    }
 }
@@ -74,7 +74,7 @@ if(isset($_POST["submit"])) {
              <button type="submit" class="btn btn-primary" name="submit">Tambahkan lagu</button>
             </div>
             <div class="col-4">
-            <a href="admin.php" ><button type="button" class="btn btn-dark">kembali ke admin</button></a>
+            <a href="index.php" ><button type="button" class="btn btn-dark">kembali ke admin</button></a>
             </div>
         </form>
   </div>
