@@ -1,9 +1,17 @@
 <?php 
+<<<<<<< HEAD
 // session_start();
 // if(!isset($_SESSION["username"])) {
 // 	header("Location: login.php");
 // 	die;
 // }
+=======
+session_start();
+if(!isset($_SESSION["username"])) {
+	header("Location: login.php");
+	die;
+}
+>>>>>>> 04dce219c897b1d9879114a368a5fba7305e6d97
 require 'functions.php';
 $legientertaiment = query("SELECT * FROM nct");
 
@@ -50,10 +58,17 @@ if(isset($_POST["cari"])) {
         </button>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
+<<<<<<< HEAD
             <a class="nav-link dropdown-toggle" href="profile.php">
               <img src="img/resonance.jpg" alt="profile"/>
             </a>
               <a class="dropdown-item" href="login.php">
+=======
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="img/resonance.jpg" alt="profile"/>
+            </a>
+              <a class="dropdown-item">
+>>>>>>> 04dce219c897b1d9879114a368a5fba7305e6d97
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -68,7 +83,28 @@ if(isset($_POST["cari"])) {
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
+<<<<<<< HEAD
 
+=======
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+>>>>>>> 04dce219c897b1d9879114a368a5fba7305e6d97
       <div id="right-sidebar" class="settings-panel">
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -166,7 +202,11 @@ if(isset($_POST["cari"])) {
               <li class="list active">
                 <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
                 <div class="info">
+<<<<<<< HEAD
                   <p>legi</p>
+=======
+                  <p>Thomas Douglas</p>
+>>>>>>> 04dce219c897b1d9879114a368a5fba7305e6d97
                   <p>Available</p>
                 </div>
                 <small class="text-muted my-auto">19 min</small>
@@ -327,7 +367,12 @@ if(isset($_POST["cari"])) {
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
+<<<<<<< HEAD
                 <li class="nav-item"> <a class="nav-link" href="login.php"> Login </a></li>
+=======
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.php"> Register </a></li>
+>>>>>>> 04dce219c897b1d9879114a368a5fba7305e6d97
               </ul>
             </div>
           </li>
